@@ -1,0 +1,99 @@
+// SPDX-FileCopyrightText: 2023 CrBr67 <lenaicjacquemin@outlook.fr>
+//
+// SPDX-License-Identifier: CC-BY-SA-4.0
+
+= Hello_world specifications.
+LJAA <ljaacorp@hotmail.com>
+:doctype:  book
+:toc:      left
+:numbered:
+:toclevel: 3
+
+
+== Horned beast
+
+[ditaa, "horned_beast"]
+....
+    Who is it for ?                On what does it act ?
+/---------------------\            /-------------------\
+| 	For every     |            | On a computer     |
+|      human being    |            | 	screen	       |
+|                     |            |    	       |
+\----------+----------/            \---------+---------/
+           |                                 |
+           |         The product             |
+           |     /-----------------\         |
+           |     |  Hello_world    |         |
+           \-----+                 +----+----/
+                 |     program     |    |
+                 \-----------------/    |
+                                        |
+                          /-------------/
+                          |
+                          V
+            /-------------+-------------\
+            | Providing hapiness in one |
+            |    single sentence        |
+            \---------------------------/
+                        Why ?
+....
+
+The Hello_world program provides hapiness in one single sentence on a computer screen for each human being.
+
+
+== Octopus
+
+[graphviz, "octopus", layout=twopi]
+----
+graph octopus
+{
+   ranksep = 2.5
+   root    = "Hello_world"
+
+   "Users"            -- "Hello_world" [label = Fc_1]
+   "Hello fondation"  -- "Hello_world" [label = Fc_2]
+   "Computer"         -- "Hello_world" [label = Fc_3]
+   "Programmer"       -- "Hello_world" [label = Fc_4]
+   "Seller"           -- "Hello_world" [label = Fc_5]
+
+   "Hello fondation"      -- "Users"   [label = Fp_1]
+}
+----
+
+
+== Requirements
+
+[cols="12%,~a"]
+|====
+| Id         | Description
+
+| <<Fp_1_1>> | Enable to say Hello_world
+| <<Fp_1_2>> | Enable to say Hello_world on windows system
+| <<Fp_1_3>> | Enable to say Hello_world on linux system
+| <<Fp_1_4>> | Enable to say Hello_world on mac system
+| <<Fp_1_5>> | Enable to say Hello_world in the desired langage 
+| <<Fp_1_6>> | Enable to launch the program manually
+| <<Fp_1_7>> | Enable to see at ease the visual part of the program 
+| <<Fp_1_8>> | Enable to see the text written with a green font 
+
+| <<Fc_4>>   | Must respect all the aspects of the usual coding standards
+
+|====
+
+
+== Rational
+
+
+=== Fc_4
+
+[Fc_4]
+
+We must respect those aspects in order to increase the compatibility with each systems.
+And to make things easier if we to make changes.
+
+=== Fp_1
+
+[[Fp_1_1]][[Fp_1_5]]
+To say hello to people in order to make them feel important and happy
+
+
