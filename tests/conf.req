@@ -1,0 +1,11 @@
+# SPDX-FileCopyrightText: 2023 Youyou0701 <ayyoubayyadi@hotmail.fr>
+#
+# SPDX-License-Identifier: CC-BY-SA-4.0
+
+document specs -path ../specs/hello_world-specs.adoc \
+               -req         "<<(F[pc]_[0-9]+(_[0-9]+)?)>>" \
+	       -end-req     "|===" \
+               -start-after "== Requirements" \
+	       -stop-after  "== Rational"  \
+	       -sort alphanum
+	       -type txt
