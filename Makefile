@@ -2,15 +2,18 @@
 #
 # SPDX-License-Identifier: CC-BY-SA-4.0
 
-all: specs
+all: specs tests
 	reuse lint
 
 specs:
 	$(MAKE) -C specs
 
+tests:
+	$(MAKE) -C tests
+
 clean:
 	$(MAKE) -C specs clean
 
 
-.PHONY: specs clean
+.PHONY: specs tests clean
 
