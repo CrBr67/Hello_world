@@ -2,8 +2,11 @@
 #
 # SPDX-License-Identifier: CC-BY-SA-4.0
 
-all: results/hello_world.tap
+all: check
 
+check: results/hello_world.tap
+	tappy -v $<
+	reqflow stat -s
 
 results/hello_world.tap: $(wildcard test_F*) | results
 	./test_harness.sh $^ > $@
@@ -12,6 +15,9 @@ results/hello_world.tap: $(wildcard test_F*) | results
 results:
 	mkdir $@
 
+clean:
+	rm -r  results 
 
-.PHONY: clean
+
+.PHONY: all clean check
 
