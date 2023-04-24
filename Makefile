@@ -5,10 +5,13 @@
 all: specs tests
 	reuse lint
 
+build: hello_world.adb
+	gnatmake $<
+
 specs:
 	$(MAKE) -C specs
 
-tests:
+tests: build
 	$(MAKE) -C tests
 
 clean:
