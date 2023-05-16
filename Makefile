@@ -16,6 +16,7 @@ tests: build
 
 clean:
 	$(MAKE) -C specs clean
+	$(MAKE) -C tests clean
 
 
 .PHONY: specs tests clean

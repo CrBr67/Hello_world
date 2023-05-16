@@ -14,7 +14,7 @@ all:  $(DOCUMENT).html $(DOCUMENT).pdf
 	asciidoctor-pdf $< $(ASCIIDOCTOR_OPTION)
 
 clean: 
-	rm *.html *.pdf
+	rm -f *.html *.pdf
 
 .PHONY: all clean
 # avec PHONY il fait le programme all clean sans regarder si c'est déjà effectué
