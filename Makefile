@@ -17,6 +17,7 @@ tests: build
 clean:
 	$(MAKE) -C specs clean
 	$(MAKE) -C tests clean
+	$(RM) -f *.o *.ali hello_world
 
 
 .PHONY: specs tests clean

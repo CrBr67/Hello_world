@@ -16,7 +16,7 @@ results:
 	mkdir $@
 
 clean:
-	rm -r  results 
+	$(RM) -rf results 
 
 
 .PHONY: all clean check
