@@ -5,7 +5,7 @@
 #!/bin/sh
 
 RESULT=$(../hello_world)
-EXPECT="^\033\[32m"
+EXPECT="\033\[0m$"
 
 if printf "%s" "$RESULT" | grep -Pq "$EXPECT"
 then

@@ -7,7 +7,7 @@
 RESULT=$(../hello_world)
 EXPECT="Hello World !!!"
 
-if [ "$RESULT" = "$EXPECT" ]
+if printf "%s" "$RESULT" | grep -Pq "$EXPECT"
 then
 	exit 0
 else

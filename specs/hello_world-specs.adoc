@@ -76,6 +76,7 @@ graph octopus
 | <<Fp_1_7>> | Enable to see at ease the visual part of the program 
 | <<Fp_1_8>> | Enable to see the text written with a green font 
 
+| <<Fc_1>>   | Must set back the terminal to its initial state after use 
 | <<Fc_4>>   | Must respect all the aspects of the usual coding standards
 
 |====
@@ -83,6 +84,10 @@ graph octopus
 
 == Rational
 
+
+=== Fc_1
+
+In order to use the terminal in its initial state afterwards.
 
 === Fc_4
 
