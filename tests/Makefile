@@ -8,8 +8,8 @@ check: results/hello_world.tap
 	tappy -v $<
 	reqflow stat -s
 
-results/hello_world.tap: $(wildcard test_F*) | results
-	./test_harness.sh $^ > $@
+results/hello_world.tap:  $(wildcard test_F*) ../hello_world | results
+	./test_harness.sh $(wildcard test_F*) > $@
 
 
 results:

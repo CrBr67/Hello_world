@@ -20,5 +20,5 @@ clean:
 	$(RM) -f *.o *.ali hello_world
 
 
-.PHONY: specs tests clean
+.PHONY: all build specs tests clean
 
