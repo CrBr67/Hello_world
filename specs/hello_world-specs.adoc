@@ -65,19 +65,27 @@ graph octopus
 
 [cols="12%,~a"]
 |====
-| Id         | Description
+| Id           | Description
 
-| <<Fp_1_1>> | Enable to say Hello_world
-| <<Fp_1_2>> | Enable to say Hello_world on windows system
-| <<Fp_1_3>> | Enable to say Hello_world on linux system
-| <<Fp_1_4>> | Enable to say Hello_world on mac system
-| <<Fp_1_5>> | Enable to say Hello_world in the desired langage 
-| <<Fp_1_6>> | Enable to launch the program manually
-| <<Fp_1_7>> | Enable to see at ease the visual part of the program 
-| <<Fp_1_8>> | Enable to see the text written with a green font 
+| <<Fp_1_1>>   | Enable to say Hello_world
+| <<Fp_1_2>>   | Enable to say Hello_world on windows system
+| <<Fp_1_3>>   | Enable to say Hello_world on linux system
+| <<Fp_1_4>>   | Enable to say Hello_world on mac system
+| <<Fp_1_5_1>> | Enable to say Hello_world in operating system language
+| <<Fp_1_5_2>> | Enable to say Hello_world in the user language in the below list
+[%header,format=tsv]
+!====
+Lang	Translation
+include::translation.tsv[[]
+!====
+| <<Fp_1_5_3>> | Enable to use a command no matter its case
+| <<Fp_1_6>>   | Enable to launch the program manually
+| <<Fp_1_7>>   | Enable to see at ease the visual part of the program 
+| <<Fp_1_8>>   | Enable to see the text written with a green font 
 
-| <<Fc_1>>   | Must set back the terminal to its initial state after use 
-| <<Fc_4>>   | Must respect all the aspects of the usual coding standards
+| <<Fc_1_1>>   | Must set back the terminal to its initial state after use 
+| <<Fc_1_2>>   | Must priorise the user choice over the operating system language 
+| <<Fc_4>>     | Must respect all the aspects of the usual coding standards
 
 |====
 

@@ -3,7 +3,7 @@
 # SPDX-License-Identifier: CC-BY-SA-4.0
 
 document specs -path ../specs/hello_world-specs.adoc \
-               -req         "<<(F[pc]_[0-9]+(_[0-9]+)?)>>" \
+               -req         "<<(F[pc]_[0-9]+(_[0-9]+)*)>>" \
 	       -end-req     "|===" \
                -start-after "== Requirements" \
 	       -stop-after  "== Rational"  \
@@ -14,5 +14,5 @@ document tests -path results/hello_world.tap \
                -req         "^((not )?ok [0-9]+)" \
 	       -sort alphanum \
 	       -type txt \
-               -ref         "test_(F[pc]_[0-9]+(_[0-9]+)?)"
+               -ref         "test_(F[pc]_[0-9]+(_[0-9]+)*)"
 	       -nocov
